@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    include include/head.jade
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700italic,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  body
+    include include/header.jade      
+    div.wrapper
+        section.administraiton--home--image(style="background: url(img/vuz.jpg)")
+            .content
+                .middle
+                    h1 Высшие учебные заведения
+        section.administraiton--home--section
+            .content
+                include include/ad-sub-menu.jade
+                .right--block
+                    .title--block(style="background: url(img/bg-title-block11.jpg)")
+                        .middle
+                            h2 Высшие учебные заведения
+                    article
+                    
+                        .display-image-block
+                        
+                            .image-block.image-block-2(style="background: url(img/vuz1.jpg)")
+                                .image-txt-block
+                                    .title-desk Смоленский государственный <br>университет
+                                                                                                                                    
+                            .image-block.image-block-2(style="background: url(img/vuz2.jpg)")
+                                .image-txt-block
+                                    .title-desk Смоленский государственный <br>медицинский университет                                                                                                                                    
+                            .image-block.image-block-2(style="background: url(img/vuz3.jpg)")
+                                .image-txt-block
+                                    .title-desk Смоленская государственная <br>сельскохозяйственная академия                                                                                                                
+                            .image-block.image-block-2(style="background: url(img/vuz4.jpg)")
+                                .image-txt-block
+                                    .title-desk Филиал ФГБОУ ВПО "НИУ МЭИ" <br> <br> <br>                                                                                                                                    
+                            .image-block.image-block-2(style="background: url(img/vuz5.jpg)")
+                                .image-txt-block
+                                    .title-desk Смоленская государственная академия физической культуры, спорта и туризма                                                                                                                                    
+                            .image-block.image-block-2(style="background: url(img/vuz6.jpg)")
+                                .image-txt-block
+                                    .title-desk Военная академия <br> <br> <br>                                                                                                            
+                         
+             
+        include include/footer.jade
+                    
+
+
+                        

@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    include include/head.jade
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700italic,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  body
+    include include/header.jade      
+    div.wrapper
+        section.administraiton--home--image(style="background: url(img/proj.jpg)")
+            .content
+                .middle
+                    h1 Проживание и пребывание 
+        section.administraiton--home--section
+            .content
+                include include/ad-sub-menu.jade
+                .right--block
+                    .title--block(style="background: url(img/bg-title-block17.jpg)")
+                        .middle
+                            h2 Проживание и пребывание 
+                    article
+                        p Аренда жилья (средняя цена):
+                        h3 Аренда в месяц:
+                    .table-ons.non-line
+                    
+                        .one.min-bot
+                            .one-block
+                                .middle
+                                    div.title <span class="big">10863</span>  <span class="min">руб.</span>
+                                        .title-desc однокомнатные
+                        
+                    
+                        .one.min-bot
+                            .one-block
+                                .middle
+                                    div.title  <span class="big">12789</span> <span class="min">руб.</span>
+                                        .title-desc двухкомнатные  
+                    article
+                        h3 Аренда в сутки:
+                    .table-ons.non-line
+                    
+                        .one.min-bot
+                            .one-block
+                                .middle
+                                    div.title <span class="big">2020</span>  <span class="min">руб.</span>
+                                        .title-desc однокомнатные <br>и студии 
+                                    
+                    article
+                        h3 Типы виз
+                        p В зависимости от цели визита, могут быть визы:
+                        p — дипломатические; <br>— служебные; <br>— обыкновенные; <br>— транзитные; <br>— виза временно проживающего лица.
+
+
+                    
+                                                                                                         
+                         
+             
+        include include/footer.jade

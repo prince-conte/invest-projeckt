@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    include include/head.jade
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700italic,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  body
+    include include/header.jade      
+    div.wrapper
+        section.administraiton--home--image(style="background:url(img/turism.jpg)")
+            .content
+                .middle
+                    h1 Туристический потенциал
+        section.administraiton--home--section
+            .content
+                include include/ad-sub-menu.jade
+                .right--block
+                    .title--block(style="background: url(img/bg-title-block10.jpg)")
+                        .middle
+                            h2 Туристический потенциал
+                    article
+                    .table-ons.non-line
+                    
+                        .one
+                            .one-block
+                                .middle
+                                    div.title <span class="big">60</span>
+                                        .title-desc Музеев
+                        
+                    
+                        .one
+                            .one-block
+                                .middle
+                                    div.title  <span class="big">328 906</span>
+                                        .title-desc объектов <br>культурного наследия
+                                        
+                    .table-ons.non-line
+                        
+                    
+                        .one
+                            .one-block
+                                .middle
+                                    div.title   <span class="big">1750</span>
+                                        .title-desc объектов <br>археологического наследия
+                    article
+                        h3 Приоритетные направления
+                        p — Культурно-познавательный и событийный<br> — Рекреационный<br> — Религиозный и паломнический<br> — Сельский и экологический<br> — Лечебно-оздоровительный 
+                        h3 Особо охраняемые природные территории
+                        p — Национальный парк «Смоленское Поозерье»<br> — Природный парк «Гагаринский»
+                                            
+
+                        
+        include include/footer.jade
+    
+                    
+
+
+                        
