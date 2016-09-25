@@ -424,6 +424,7 @@ section {
   left: 0px;
   width: 100%;
   height: 100%;
+  display: block !important;
 }
 .logo-b {
   position: relative;
@@ -2379,6 +2380,7 @@ header .lang-b #sb {
   height: 100%;
   background-color: #171717;
   opacity: 0.502;
+  display: block;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2387,6 +2389,7 @@ header .lang-b #sb {
 .invest .ab-tab {
   height: calc(100% - 120px);
   top: 130px;
+  display: block;
 }
 .invest .slider-wrapp {
   position: absolute;
@@ -2447,11 +2450,12 @@ header .lang-b #sb {
   width: 100%;
   margin-top: 40px;
   margin-left: -5px;
+  position: relative;
 }
 .invest .invest-block .one {
   position: relative;
   float: left;
-  display: inline-table;
+  display: inline-block;
   width: 50%;
   height: 405px;
   background-position: CENTER CENTER;
@@ -2956,6 +2960,11 @@ footer .boot-b .nav a:hover {
   float: left;
   font-size: 28px;
 }
+.administraiton--home--section .right--block article h3 {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+}
 .administraiton--home--section .right--block article p {
   color: #3b3b3b;
   font-size: 16px;
@@ -2964,6 +2973,15 @@ footer .boot-b .nav a:hover {
   margin: 21px 0;
   float: left;
   width: 100%;
+}
+.administraiton--home--section .right--block article p a {
+  color: #38c117;
+  text-decoration: underline;
+}
+.administraiton--home--section .right--block article p img {
+  display: block;
+  width: auto;
+  margin-top: 15px;
 }
 .administraiton--home--section .right--block article .min-top {
   margin-top: -10px;
