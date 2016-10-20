@@ -76,14 +76,22 @@ background: url(../img/sear.png); .bgCCC;}
     .slab {background: url(../img/oko.png);}
 }
 
-.lang-b{position: relative; float: right; display: inline-table;  height: 100%; 
-.lang {position: relative; display: block; margin-top: -4px; background: @coltxt; border-radius: 20px; width: 87px;
+.lang-b{position: relative; float: right; display: inline-table;  height: 100%;
+.lang {position: relative; display: block; margin-top: -4px; background: @coltxt; border-radius: 20px; width: 87px;  cursor: pointer;   
+select {background: transparent; font-size: 14px; font-weight: 700; color: #fff; padding: 14px 0px 12px 14px; width: 100%; z-index: 9999;  cursor: pointer;}   
+option{
+  color:#fff;
+  background:@coltxt;
+}   
+    
 .lsr {position: relative; display: none; padding: 12px 20px;  font-size: 14px; font-weight: 700; color: #fff;}
 .active {display: block;}       
 }
-#sb {position: absolute; width: 16px; height: 10px; background: url(../img/sty-b.png); .bgCCC; right: 12px; top: 17px; }
+.lang::before {content: '';  position: absolute; width: 16px; height: 10px; background: url(../img/sty-b.png); .bgCCC; right: 12px; top: 17px; }
 
 }
+    
+
   
    
  }

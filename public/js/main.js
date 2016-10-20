@@ -10,6 +10,7 @@
      titleClick2 = 0; 
      titleClick3 = 0; 
      titleClick4 = 0; 
+     titleClick5 = 0; 
      
      //slider invest index
      clickInvest = 1;
@@ -148,6 +149,11 @@ titleClick2 = 0;
 $('#title-block3').removeClass('active');
 $('#sub-3 li').fadeOut(0);
 titleClick3 = 0;
+    
+$('#title-bloc5').removeClass('active');
+$('#sub-5 li').fadeOut(0);
+titleClick5 = 0;
+    
 } else {
 $('#title-block1').removeClass('active');
 $('#sub-1 li').fadeOut(0);
@@ -174,6 +180,11 @@ titleClick3 = 0;
 $('#title-block1').removeClass('active');
 $('#sub-1 li').fadeOut(0);
 titleClick1 = 0;
+    
+$('#title-bloc5').removeClass('active');
+$('#sub-5 li').fadeOut(0);
+titleClick5 = 0;
+    
 } else {
 $('#title-block2').removeClass('active');
 $('#sub-2 li').fadeOut(0);
@@ -200,7 +211,12 @@ $('#sub-2 li').fadeOut(0);
 titleClick2 = 0;  
 $('#title-block1').removeClass('active');
 $('#sub-1 li').fadeOut(0);
-titleClick1 = 0;  
+titleClick1 = 0; 
+    
+$('#title-bloc5').removeClass('active');
+$('#sub-5 li').fadeOut(0);
+titleClick5 = 0;
+    
 } else {
 $('#title-block3').removeClass('active');
 $('#sub-3 li').fadeOut(0);
@@ -229,7 +245,12 @@ $('#sub-2 li').fadeOut(0);
 titleClick2 = 0;  
 $('#title-block1').removeClass('active');
 $('#sub-1 li').fadeOut(0);
-titleClick1 = 0;  
+titleClick1 = 0;
+    
+$('#title-block5').removeClass('active');
+$('#sub-5 li').fadeOut(0);
+titleClick5 = 0;
+    
     
     
     
@@ -239,6 +260,42 @@ titleClick1 = 0;
 $('#title-block4').removeClass('active');
 $('#sub-4 li').fadeOut(0);
 titleClick4 = 0;    
+}
+
+});
+     
+           
+$('#title-block5').click(function() {
+    
+if (titleClick5 == 0) {
+$('#title-block5').addClass('active');
+$('#sub-5 li').fadeIn(0);
+titleClick5 = 1;   
+    
+//off
+    
+$('#title-block3').removeClass('active');
+$('#sub-3 li').fadeOut(0);
+titleClick3 = 0;  
+$('#title-block2').removeClass('active');
+$('#sub-2 li').fadeOut(0);
+titleClick2 = 0;  
+$('#title-block1').removeClass('active');
+$('#sub-1 li').fadeOut(0);
+titleClick1 = 0;  
+$('#title-block4').removeClass('active');
+$('#sub-4 li').fadeOut(0);
+titleClick4 = 0;
+    
+    
+    
+    
+    
+
+} else {
+$('#title-block5').removeClass('active');
+$('#sub-5 li').fadeOut(0);
+titleClick5 = 0;    
 }
 
 });
