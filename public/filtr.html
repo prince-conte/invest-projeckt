@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.19.custom.css">
+    <link rel="stylesheet" type="text/css" href="css/simplelightbox.css">
     <!-- endbuild -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -107,8 +108,8 @@
     <div class="wrapper">
       <section class="administraiton--home--section">
         <div class="content">
-          <div id="left-sub-menu" class="left-block">
-            <div id="title-block1" class="title-block active">
+          <div id="left-sub-menu" class="left-block filtrs-bar">
+            <div class="title-block">
               <div class="form-float">
                 <h4 class="inp-title">Площадь участка, Га</h4>
                 <div class="form-float_val">
@@ -120,6 +121,12 @@
                 <div id="slider_price1"> </div>
               </div>
               <div class="form-float">
+                <div class="form-float_line">
+                  <input type="checkbox" class="form-float_check">
+                  <label>Все районы</label>
+                </div>
+              </div>
+              <div class="form-float"> 
                 <h4 class="inp-title">Расположение</h4>
                 <div class="form-float_line">
                   <input type="checkbox" class="form-float_check">
@@ -131,111 +138,82 @@
                 </div>
               </div>
             </div>
-            <div id="title-block1" class="title-block active"><a class="ico"> 
+            <div id="title-block2" class="title-block"><a class="ico"> 
                 <div class="middle"><i></i></div></a>
               <h4 class="inp-title2">Наличие строений</h4>
-              <div id="sub-1" class="floatings_form">
+              <div id="sub-filtrs-2" class="floatings_form">
                 <div class="form-float">
                   <div class="form-float_desc">Площадь складских помещений, кв. м.</div>
                   <div class="form-float_val">
                     <div class="form-float_titl-l">0</div>
                     <input id="price2" type="text" name="price" maxlength="10" class="form-float_val_inp"><span>-</span>
                     <input id="price2_2" type="text" name="price" maxlength="10" class="form-float_val_inp">
-                    <div class="form-float_titl-r">2500</div>
+                    <div class="form-float_titl-r">25000</div>
                   </div>
                   <div id="slider_price2"> </div>
                 </div>
                 <div class="form-float">
-                  <h4 class="inp-title">Расположение</h4>
-                  <div class="form-float_line">
-                    <input type="checkbox" class="form-float_check">
-                    <label>Автомобильное сообщение</label>
+                  <div class="form-float_desc">Площадь производственных помещений, кв. м.</div>
+                  <div class="form-float_val">
+                    <div class="form-float_titl-l">0</div>
+                    <input id="price3" type="text" name="price" maxlength="10" class="form-float_val_inp"><span>-</span>
+                    <input id="price3_2" type="text" name="price" maxlength="10" class="form-float_val_inp">
+                    <div class="form-float_titl-r">25000</div>
                   </div>
-                  <div class="form-float_line">
-                    <input type="checkbox" class="form-float_check">
-                    <label>Железнодорожное сообщение</label>
+                  <div id="slider_price3"> </div>
+                </div>
+                <div class="form-float">
+                  <div class="form-float_desc">Площадь административных помещений, кв. м.</div>
+                  <div class="form-float_val">
+                    <div class="form-float_titl-l">0</div>
+                    <input id="price4" type="text" name="price" maxlength="10" class="form-float_val_inp"><span>-</span>
+                    <input id="price4_2" type="text" name="price" maxlength="10" class="form-float_val_inp">
+                    <div class="form-float_titl-r">25000</div>
                   </div>
+                  <div id="slider_price4"> </div>
+                </div>
+                <div class="form-float">
+                  <div class="form-float_desc">Площадь сельскохозяйственных помещений, кв. м.</div>
+                  <div class="form-float_val">
+                    <div class="form-float_titl-l">0</div>
+                    <input id="price5" type="text" name="price" maxlength="10" class="form-float_val_inp"><span>-</span>
+                    <input id="price5_2" type="text" name="price" maxlength="10" class="form-float_val_inp">
+                    <div class="form-float_titl-r">25000</div>
+                  </div>
+                  <div id="slider_price5"> </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="right--block">
-            <div style="background: url(img/bg-title-block.jpg)" class="title--block">
-              <div class="middle">
-                <h2>Административно-территориальное <br> устройство</h2>
+            <div class="right--block__search-block">
+              <div class="search-body"> 
+                <div class="right--block__inp-search">
+                  <input placeholder="Поиск известной площадки"><i></i>
+                </div>
+              </div>
+              <div class="right--block__article">
+                <h3>АЗС Автомобильная газозаправочная станция</h3><span class="desc">Площадь: 1283 Га.</span><img src="img/plaz-vel.jpg">
+                <div class="adr"><span>Смоленская область, Смоленский район,дер.Звеньково,412 км. а\д м-1 <br> Москва-Минск.</span><i> </i></div>
+                <div class="nvs_item"><i class="man"></i> Владелец площадки: <b>ООО  Экстр</b></div>
+                <div class="nvs_item"><i class="doc"></i> Условия приобретения: <b>Покупка</b></div>
+                <div class="button-block"><a class="button">подробно</a></div>
+              </div>
+              <div class="right--block__article">
+                <h3>АЗС Автомобильная газозаправочная станция</h3><span class="desc">Площадь: 1283 Га.</span><img src="img/plaz-vel.jpg">
+                <div class="adr"><span>Смоленская область, Смоленский район,дер.Звеньково,412 км. а\д м-1 <br> Москва-Минск.</span><i> </i></div>
+                <div class="nvs_item"><i class="man"></i> Владелец площадки: <b>ООО  Экстр</b></div>
+                <div class="nvs_item"><i class="doc"></i> Условия приобретения: <b>Покупка</b></div>
+                <div class="button-block"><a class="button">подробно</a></div>
+              </div>
+              <div class="right--block__article">
+                <h3>АЗС Автомобильная газозаправочная станция</h3><span class="desc">Площадь: 1283 Га.</span><img src="img/plaz-vel.jpg">
+                <div class="adr"><span>Смоленская область, Смоленский район,дер.Звеньково,412 км. а\д м-1 <br> Москва-Минск.</span><i> </i></div>
+                <div class="nvs_item"><i class="man"></i> Владелец площадки: <b>ООО  Экстр</b></div>
+                <div class="nvs_item"><i class="doc"></i> Условия приобретения: <b>Покупка</b></div>
+                <div class="button-block"><a class="button">подробно</a></div>
               </div>
             </div>
-            <article>
-              <p>Смоленская область, в современном понимании, образована <b>27 сентября 1937 года.</b> В настоящий момент входит в состав Центрального федерального округа.</p>
-            </article>
-            <div class="table-ons">
-              <div class="one">
-                <div class="one-block">
-                  <div class="middle">
-                    <div class="title">Смоленск
-                      <div class="title-desc">областной центр</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="one">
-                <div class="one-block">
-                  <div class="middle">
-                    <div class="title">2
-                      <div class="title-desc">городских округа</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="one">
-                <div class="one-block">
-                  <div class="middle">
-                    <div class="title">25
-                      <div class="title-desc">муниципальных <br> районов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="one">
-                <div class="one-block">
-                  <div class="middle">
-                    <div class="title">24
-                      <div class="title-desc">муниципальных <br> районов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="one">
-                <div class="one-block">
-                  <div class="middle">
-                    <div class="title">278
-                      <div class="title-desc">городских <br> поселения</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <article>
-              <h3>Географическое положение</h3>
-              <p>Смоленская область расположена в центре Восточно-Европейской равнины, на западе Российской Федерации. Протяженность территории с запада на восток –   280 км, с севера на юг – 250 км. </p>
-              <p>Регион граничит с пятью областями России: на севере – с Псковской и Тверской, на востоке и юго-востоке – с Московской и Калужской, и на юге – с   Брянской; и двумя областями Республики Беларусь: Витебской на северо-западе и Могилевской на юго-западе.</p>
-            </article>
-            <h4>Крупные города</h4>
-            <div class="content--slider--block">
-              <div id="slider-wrapper" class="slider--wrapper">
-                <div style="background: url(img/smolinsk.jpg)" class="slide">
-                  <div class="slide-title-block"><span class="title">Смоленск</span><span class="title-desc"><b>329 тыс.</b> человек                       </span></div>
-                </div>
-                <div style="background: url(img/smolinsk.jpg)" class="slide">
-                  <div class="slide-title-block"><span class="title">Сафоново</span><span class="title-desc"><b>43 тыс.</b> человек</span></div>
-                </div>
-              </div>
-              <ul class="slider--nav">
-                <li id="sl-left"><div class="middle"><i></i></div></li>
-                <li id="sl-right"><div class="middle"><i></i></div></li>
-              </ul>
-            </div>
-            <h4>Пограничные государства</h4><img src="img/map.jpg">
           </div>
         </div>
       </section>
@@ -284,7 +262,6 @@
       <script src="js/jquery-1.7.2.min.js"></script>
       <script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script>
       <script type="text/javascript" src="js/prog-1.js"></script>
-      <script type="text/javascript" src="js/prog-2.js"></script>
     </div>
   </body>
 </html>

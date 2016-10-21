@@ -33,7 +33,7 @@ i {margin: 0 auto; width: 14px; height: 10px; display: block; margin: 0 auto; po
 .form-float_titl-l {float: left; display: inline-block; color: #838383; font-size: 12px;}   
 .form-float_titl-r {float: right; display: inline-block; color: #838383; font-size: 12px;}   
 .form-float_val {display: block; width: 100px; position: relative; display: block; width: 100%;  text-align: center;
-    .form-float_val_inp {display: inline-block; margin: 0 3px; font-size: 12px; color: @coltxt; width: 30px; text-align: center; background: transparent; margin-bottom: 5px;}  
+    .form-float_val_inp {display: inline-block; margin: 0 3px; font-size: 12px; color: @coltxt; width: 40px; text-align: center; background: transparent; margin-bottom: 5px;}  
 }
 .form-float_line {float: left; width: 100%; padding: 5px 0}   
 .form-float_check {display: inline-block; margin-right: 12px; position: relative; top: 1px; width: 15px; height: 15px; border-radius: 6px;}  
@@ -53,7 +53,8 @@ cursor: pointer;}
     
 }  
     
-.floatings_form {float: left; width: 100%; padding-left: 0px; padding-bottom: 14px; margin-bottom: 18px;}    
+.floatings_form {float: left; width: 100%; padding-left: 0px; padding-bottom: 14px; margin-bottom: 18px;}   
+    #sub-filtrs-2 {display: none;}
     .form-float_desc {display: block; padding: 20px 0; font-size: 15px;}    
     
 }  
@@ -181,7 +182,50 @@ i {display: block; .bgCCC; background: url(../img/stick.png); width: 8px; height
     
     .slider--block--h2 {height: 420px; margin-bottom: 80px;}    
     
+}  
+    
+    
+// search-block    
+.right--block__search-block {float: left; width: 100%; padding: 17px 0;
+    .search-body {float: left; width: 100%; padding: 0 35px; }
+.right--block__inp-search {float: left; width: 100%; border-radius: 8px; overflow: hidden; background: #f6f6f6; border: solid 1px #eeeeee; position: relative; 
+input {display: block; float: left; width: 100%; background: transparent; padding: 20px; padding-left: 60px;} 
+
+::-webkit-input-placeholder {color:#8d8d8d;}
+::-moz-placeholder          {color:#8d8d8d;}/* Firefox 19+ */
+:-moz-placeholder           {color:#8d8d8d;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#8d8d8d;}
+   
+
+i {    display: inline-block; top: 6px; width: 18px; height: 18px; background: url(../img/sear.png); background-position: CENTER CENTER !important; background-repeat: no-repeat !important; background-size: contain !important; position: absolute; display: block; top: 22px; left: 25px;}
+}
+
+.right--block__article { padding: 10px 35px 50px; float: left; width: 100%; border-bottom: solid 1px #eeeeee;  margin-bottom: 15px;
+h3 {float: left; width: 100%; font-size: 20px; color: @coltxt; padding: 10px 0;}    
+.desc {float: left; width: 100%; font-size: 14px; color: #959595; margin: 10px 0;}  
+    img {display: block; float: left; width: 100%; height: auto; border: solid 1px #eeeeee; border-top-left-radius: 8px; margin: 10px 0;}
+    .adr {float: left; width: 100%; margin: 10px 0; position: relative;
+        span {font-size: 14px; color: #959595; display: inline-block; padding-left: 27px; float: left; width: 100%;}
+        i {display: block; .bgCCC; position: absolute; display: block; height: 19px; width: 14px; top:4px; left:0px; background: url(../img/mapy.png)}  
+    }
+    .nvs_item {display: inline-block; font-size: 13px; color: @coltxt; margin: 10px 0; margin-right: 35px;
+        i.man {display: inline-block; .bgCCC; background:  url(../img/man.png); width: 14px; height: 17px; margin-right: 10px; position:relative; top: 5px;}    
+        i.doc {display: inline-block; .bgCCC; background:  url(../img/doc.png); width: 14px; height: 18px; margin-right: 10px; position:relative; top: 5px;}  
+    } 
+    .button-block {float: left; width: 100%; margin-top: 20px;
+        .button {display: inline-block; font-weight: 700; border-radius: 25px; padding: 15px 40px; background: @colfirm; color: #fff; text-transform: uppercase;
+        border: solid 2px @colfirm;
+        }
+        .button:hover {background: #fff; color: @colfirm}
+    
+    }    
+        
+    }    
+    
+    
 }    
+    
+    
     
     
     
@@ -283,5 +327,17 @@ position: relative !important; display: block !important; bottom: 0px !important
 .administraiton--home--section .right--block .table-lines .line:first-child {
     display: none;
 }
+  
+    
+    .filtrs-bar {margin-top: 120px;}    
+    
+.administraiton--home--section .left-block .title-block .inp-title {
+    font-size: 16px !important;
+    margin-left: 0px !important;
+    float: left;
+    width: 100% !important;
+    padding: 0 0 20px;
+}   
+    
     
 }

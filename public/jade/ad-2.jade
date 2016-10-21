@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    include include/head.jade
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700italic,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  body
+    include include/header.jade      
+    div.wrapper
+        section.ad-title-block
+            .content
+                h1 ООО «Оптимальная тепловая  <br> энергетика» 
+                .paginator
+                
+                    a.prev
+                        span Предыдущая история
+                        i
+                        
+                    a.next
+                        span Следующая история
+                        i
+        
+        section.administraiton--home--section.ad-full-w
+            .content
+                .ad-full-w__float-content-block
+                    .ad-full-w__float-left-block 
+            
+                        .ad-full-w__gallery.gallery
+                
+                            a.big(href="images/1.jpg")
+                                img(src="images/1.jpg" alt="" title="Just an image (#1)")
+                
+                            a(href="images/1.jpg")
+                                img(src="images/1.jpg" alt="" title="Just an image (#1)")
+                
+                            a(href="images/1.jpg")
+                                img(src="images/1.jpg" alt="" title="Just an image (#1)")
+                
+                            a(href="images/1.jpg")
+                                img(src="images/1.jpg" alt="" title="Just an image (#1)")
+                
+                            a(href="images/1.jpg")
+                                img(src="images/1.jpg" alt="" title="Just an image (#1)")
+
+                        
+        include include/footer.jade
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+        script(type="text/javascript" src="js/simple-lightbox.js")       
+        script(type="text/javascript" src="js/gallery-box.js")
