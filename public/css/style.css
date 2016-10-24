@@ -5141,7 +5141,7 @@ footer .boot-b .nav a:hover {
   height: 100%;
   z-index: 999999999;
   position: fixed;
-  display: block;
+  display: none;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
