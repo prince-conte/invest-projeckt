@@ -23,7 +23,7 @@ background: url(../img/logo.png);}
 }
     
 
-
+ 
 
 .sca{position: fixed; top:0px; left: 0px; height: 90px; width: 100%; background: #fff; box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.07); z-index: 999999999;}
 
@@ -46,7 +46,13 @@ background: url(../img/logo.png);}
 section, footer {float: left; width: 100%; min-height: 150px;}
 }
 
-
+    .button-block {float: left; width: 100%; margin-top: 20px;
+        .button {display: inline-block; font-weight: 700; border-radius: 25px; padding: 15px 40px; background: @colfirm; color: #fff; text-transform: uppercase;
+        border: solid 2px @colfirm;
+        }
+        .button:hover {background: #fff; color: @colfirm}
+    
+    }  
     
 @import "include/header.less";
 
@@ -65,6 +71,10 @@ section, footer {float: left; width: 100%; min-height: 150px;}
 @import "include/ad--styles.less";
 
 @import "include/ad-full-w.less";
+
+@import "include/contacts.less";
+
+@import "include/feedback-popup.less";
 
 
 
